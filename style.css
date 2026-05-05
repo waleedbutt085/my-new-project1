@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-box:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.add-btn {
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-btn:hover {
+    background: #764ba2;
+}
+
+.task-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    background: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.task-item:hover {
+    background: #efefef;
+    transform: translateX(5px);
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-text {
+    flex: 1;
+    color: #333;
+    font-size: 16px;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.complete-btn, .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.complete-btn {
+    background: #4caf50;
+    color: white;
+}
+
+.complete-btn:hover {
+    background: #45a049;
+}
+
+.delete-btn {
+    background: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #da190b;
+}
+
+.footer-text {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin-top: 20px;
+}
